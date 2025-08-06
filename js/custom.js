@@ -13,7 +13,7 @@
 
 
     // 2. 
-    // attach ra-text elements to prmMainMenuAfter directive
+    // attach ra-modal elements to prmMainMenuAfter directive
     // could probably be a different directive if needed
    app.component('prmMainMenuAfter', {
       template: '<ra-modal></ra-modal>'
