@@ -26,7 +26,7 @@
     // 3. 
     // Include the angular module below. 
     // Edit the text as needed in the template section
-/*************begin raText ************/
+/*************begin raModal ************/
 
 angular.module('raModal', []).component('raModal', {
   template: `
@@ -59,6 +59,8 @@ angular.module('raModal', []).component('raModal', {
     };
   }]
 });
+
+/*********** */
 
 
 
