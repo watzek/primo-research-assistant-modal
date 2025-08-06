@@ -6,24 +6,29 @@
     function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
+    // 1. 
+    // include 'raModal' in your app declaration
+    // you may need to work this into your current app declaration if you have other customizations
+    var app = angular.module('viewCustom', ['raModal', 'someOtherCustomization']);
 
-    // include 'raText' in your app declaration
-    var app = angular.module('viewCustom', ['raText']);
 
-
+    // 2. 
     // attach ra-text elements to prmMainMenuAfter directive
     // could probably be a different directive if needed
    app.component('prmMainMenuAfter', {
-      template: '<ra-text></ra-text>'
+      template: '<ra-modal></ra-modal>'
     });
 
 
 
 
 
+    // 3. 
+    // Include the angular module below. 
+    // Edit the text as needed in the template section
 /*************begin raText ************/
 
-angular.module('raText', []).component('raText', {
+angular.module('raModal', []).component('raModal', {
   template: `
     <div ng-if="$ctrl.showModal" class="ra-modal-overlay">
       <div class="ra-modal">
