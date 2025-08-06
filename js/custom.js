@@ -60,7 +60,7 @@ angular.module('raModal', []).component('raModal', {
   }]
 });
 
-/*********** */
+/*********** end raModal ***************************/
 
 
 
